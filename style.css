@@ -1,16 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
-.container{
-  position:absolute;
+.container {
+  position: absolute;
   height: 100vh;
   overflow: auto;
-  z-index:-100;
+  z-index: -100;
 }
-a{
-  color:hsl(276,16%,50%);
+a {
+  color: hsl(276, 16%, 50%);
 }
 
 .section {
@@ -19,22 +18,22 @@ a{
   height: 100vh;
   z-index: -100;
 }
-.icon{
-  animation:arrowDown 1s ease-in-out infinite;
-  position:absolute;
-  left:50%;
-  bottom:5%;
-  font-size:300%;
-  color:white;
+.icon {
+  animation: arrowDown 1s ease-in-out infinite;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  font-size: 300%;
+  color: white;
 }
 
 .imageOne {
   width: 100%;
   height: 100%;
   /* The image used */
-  background-image: url("https://i.imgur.com/67jgZ5n.jpg");
-  background-color:hsl(246, 15%, 28%);
-  background-blend-mode:screen;
+  background-image: url("./images/DadAndJan_01.jpeg");
+  background-color: hsl(246, 15%, 28%);
+  background-blend-mode: screen;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -46,8 +45,8 @@ a{
   height: 100%;
   /* The image used */
   background-image: url("https://images.pexels.com/photos/3596708/pexels-photo-3596708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-color:hsl(246, 15%, 28%);
-  background-blend-mode:screen;
+  background-color: hsl(246, 15%, 28%);
+  background-blend-mode: screen;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -58,10 +57,10 @@ a{
   width: 100%;
   height: 100%;
   /* The image used */
-  background-image: url("https://i.imgur.com/m9AsTdk.jpeg");
+  background-image: url("./images/DadAndJan_02.jpeg");
 
-  background-color:hsl(246, 15%, 28%);
-  background-blend-mode:screen;
+  background-color: hsl(246, 15%, 28%);
+  background-blend-mode: screen;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -76,57 +75,78 @@ a{
 }
 
 .offPurple {
-  background: linear-gradient(180deg,hsl(271,11%,58%),hsl(271,11%,47%));
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #bfe9ff, #ffc1c8);
+
+  background-image: url("https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  background-color: hsl(246, 15%, 28%);
+  background-blend-mode: screen;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
 }
 .offPink {
-  background: linear-gradient(180deg,hsl(321,26%,75%),hsl(321,26%,67%));
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.25));
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ffc1c8, #d0fad0);
+
+  background-image: url("https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  background-color: hsl(246, 15%, 28%);
+  background-blend-mode: screen;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
 }
 
-
-.textBox{  
+.textBox {
   position: absolute;
-  width:65%;
+  width: 65%;
   text-align: center;
   padding: 1em;
-  font-weight:400;
-  background: rgba(230, 230, 230,.90);
+  font-weight: 400;
+  background: rgba(230, 230, 230, 0.9);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
-  border-radius:10px;
-  line-height:1.5em;
+  border-radius: 10px;
+  line-height: 1.5em;
 }
-.black-line{
-  position:relative;
-  top:10px;
-  margin:0 auto;
-  width:35%;
-  height:1px;
-  background:rgb(100,100,100);
+.black-line {
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+  width: 35%;
+  height: 1px;
+  background: rgb(100, 100, 100);
 }
-.serifFont{
+.serifFont {
   font-size: 3.5vw;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
-.sansSerifFont{
-  font-size:175%;
-  font-family: 'Montserrat', sans-serif;
+.sansSerifFont {
+  font-size: 175%;
+  font-family: "Montserrat", sans-serif;
 }
-.greenText{
-  color:rgb(100,155,100);
-  font-weight:700;
+.greenText {
+  color: rgb(100, 155, 100);
+  font-weight: 700;
 }
 
-@keyframes arrowDown{
-  0%{
-    bottom:5%;
-    opacity:1;
+@keyframes arrowDown {
+  0% {
+    bottom: 5%;
+    opacity: 1;
   }
-  100%{
-    bottom:0%;
-    opacity:0;
+  100% {
+    bottom: 0%;
+    opacity: 0;
   }
 }
