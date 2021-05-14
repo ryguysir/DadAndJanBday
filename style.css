@@ -8,7 +8,6 @@
   position:absolute;
   height: 100vh;
   overflow: auto;
-  scroll-snap-type: y mandatory;
   z-index:-100;
 }
 a{
